@@ -1,6 +1,6 @@
 package com.anurag.formatspecifier;
 
-//0- zero used for padding with 0 for a empty position in given width
+//0 : zero used for padding with 0 for a empty position in given width
 public class ZeroPaddingDemo {
 
     public static void main(String[] args) {

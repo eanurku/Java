@@ -12,7 +12,7 @@ public class InterningStringDemo {
         System.out.println("s2 hascode=" + System.identityHashCode(s2));
         //== check reference only
         if (s1 == s2) {
-            System.out.println("s1==s2");
+            System.out.println("reference comparision: s1==s2");
 
         }
 
@@ -28,7 +28,11 @@ public class InterningStringDemo {
         //== check reference only
         if (s3 == s4) {
             System.out.println("s3==s4");
+        }else{
+            System.out.println("s3 != s4");
         }
+
+
 
         String s5 = s3.intern();
         String s6 = s4.intern();

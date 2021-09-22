@@ -18,7 +18,7 @@ public class ExplicitTypeConversionDemo {
         // first implicit conversion by compiler to long in expression then explicit conversion to int
         int result4 = (int) (intValue + longValue);
 
-        //mixing iteger type and floating type
+        //mixing integer type and floating type
         // first implicit conversion by compiler to float in expression then explicit conversion to int
         int result3 = (int) (floatValue + intValue);
 

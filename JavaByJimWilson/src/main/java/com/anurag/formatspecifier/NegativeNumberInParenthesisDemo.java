@@ -1,6 +1,6 @@
 package com.anurag.formatspecifier;
 
-//( - single left parenthesis is used to
+//( : single left parenthesis is used to represent negative number within parenthesis e.g. (123)
 public class NegativeNumberInParenthesisDemo {
 
     public static void main(String[] args) {

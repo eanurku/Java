@@ -1,6 +1,6 @@
 package com.anurag.formatspecifier;
 
-// ,- comma act as group separator
+// , : comma act as group separator
 public class GroupSeparatorFlagDemo {
 
     public static void main(String[] args) {

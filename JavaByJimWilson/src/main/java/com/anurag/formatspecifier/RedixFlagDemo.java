@@ -1,6 +1,6 @@
 package com.anurag.formatspecifier;
 
-//# - display base of number
+//# : display base of number
 public class RedixFlagDemo {
 
     public static void main(String[] args) {

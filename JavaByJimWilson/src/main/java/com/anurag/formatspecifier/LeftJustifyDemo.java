@@ -19,8 +19,8 @@ public class LeftJustifyDemo {
         System.out.println(String.format("x=%-4d,y=%-4d",x,y));
         System.out.println(String.format("a=%-4d,b=%-4d",a,b));
 
-        System.out.println("--------------zero padding with left justify will give format error------------------");
-       // System.out.println(String.format("x=%-4d,y=%-4d",x,y));
-       // System.out.println(String.format("a=%-4d,b=%-4d",a,b));
+        System.out.println("--------------zero padding with left justify------------------");
+        System.out.println(String.format("x=% -4d,y=%- 4d",x,y));
+        System.out.println(String.format("a=%- 4d,b=%- 4d",a,b));
     }
 }

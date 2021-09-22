@@ -17,7 +17,7 @@ public class LogicalOperatorsDemo {
 //            System.out.println("standard logical operator: num2/divisor2 is > 10");
 //        }
 
-        if(divisor1 !=0 && num1/divisor1 >=10){
+        if(divisor2 !=0 && num2/divisor2 >=10){
             System.out.println("conditional logical operator: num2/divisor2 is > 10");
         }
     }

@@ -1,6 +1,6 @@
 package com.anurag.formatspecifier;
 
-//number: number is used to specify  minimum widht for variable
+//number: number is used to specify  minimum width for variable(right justification default)
 public class WidthFlagDemo {
 
     public static void main(String[] args) {
