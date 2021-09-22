@@ -20,11 +20,11 @@ public class LocalDateDemo {
         System.out.println(
                 "----------------------any input format will work by using DateTimeFormatter---------------------------------");
         //using input date of user format
-        String inputDateString = "22/11/2022";//accepted format by LocalDate parse method
+        String inputDateString = "22--11--2022";//accepted format by LocalDate parse method
         //localDate=LocalDate.parse(inputDateString);// ERROR :Text '22/11/2022' could not be parsed at index 0
         //System.out.println(localDate);
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd--MM--yyyy");
         LocalDate mydate = LocalDate.parse(inputDateString, formatter);
 
         System.out.println(mydate);
