@@ -107,6 +107,7 @@
     
     <module>JavaOopByMaurice</module>
     <module>JavaTestFrameworks</module>
+    <module>DesignPatterns</module>
 
   </modules>
         
