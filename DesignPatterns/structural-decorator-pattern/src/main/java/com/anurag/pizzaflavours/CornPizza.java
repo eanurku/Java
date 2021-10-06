@@ -1,4 +1,4 @@
-package com.anurag.pizzas;
+package com.anurag.pizzaflavours;
 
 import com.anurag.models.Pizza;
 

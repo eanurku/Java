@@ -1,9 +1,9 @@
 package com.anurag;
 
 import com.anurag.models.Pizza;
+import com.anurag.pizzaflavours.CheesePizza;
+import com.anurag.pizzaflavours.CornPizza;
 import com.anurag.pizzas.BasicPizza;
-import com.anurag.pizzas.CheesePizza;
-import com.anurag.pizzas.CornPizza;
 
 public class App {
 
