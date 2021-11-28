@@ -1,4 +1,4 @@
-package com.anurag.insert;
+package com.anurag.length;
 
 
 public class LinkList<T> {
@@ -35,6 +35,30 @@ public class LinkList<T> {
         headRef.next = tmpNode;
     }
 
+    public void delete(T key) {
+
+        if(head==null){
+            return ;
+        }
+        //if first element to be  deleted
+        if(head.data.equals(key)){
+            head=head.next;
+        }
+
+        Node prev=null;
+        Node headRef=head;
+        while(headRef !=null && !headRef.data.equals(key)){
+            prev=headRef;
+            headRef=headRef.next;
+        }
+        //no key found
+        if(headRef==null){
+            return ;
+        }
+        prev.next=headRef.next;
+
+    }
+
 
     public void printLinkList() {
 
@@ -44,6 +68,7 @@ public class LinkList<T> {
             System.out.print(headRef.next != null ? " " : "");
             headRef = headRef.next;
         }
+        System.out.println();
 
     }
 
@@ -57,4 +82,18 @@ public class LinkList<T> {
         }
         return size;
     }
+
+    public int lengthR() {
+
+        return this.getLengthRecursively(head);
+    }
+
+    private int getLengthRecursively(Node head) {
+        if (head == null) {
+            return 0;
+        }
+        return 1 + getLengthRecursively(head.next);
+    }
+
+
 }

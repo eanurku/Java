@@ -2,7 +2,7 @@ package com.anurag.create;
 
 import static com.anurag.create.LinkList.Node;
 
-public class InsertDemo {
+public class CreateDemo {
 
     public static void main(String[] args) {
 

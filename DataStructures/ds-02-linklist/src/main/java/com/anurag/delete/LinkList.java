@@ -1,8 +1,9 @@
-package com.anurag.insert;
+package com.anurag.delete;
 
 
 public class LinkList<T> {
     private Node head;
+
 
     private class Node {
         T data;
@@ -57,4 +58,18 @@ public class LinkList<T> {
         }
         return size;
     }
+
+    public int lengthR() {
+
+        return this.getLengthRecursively(head);
+    }
+
+    private int getLengthRecursively(Node head) {
+        if (head == null) {
+            return 0;
+        }
+        return 1 + getLengthRecursively(head.next);
+    }
+
+
 }
