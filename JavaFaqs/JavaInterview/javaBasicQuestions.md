@@ -1,6 +1,6 @@
 Core Java Basics:
 ---------------------
-1. How compiler and javm run java code on different OS?
+1. How compiler and jvm run java code on different OS?
 
     .java---compiler--->.class----jvm---->executable file for machine of diff types.
 2. Diff between  abstraction,encapsulation?  
@@ -181,7 +181,7 @@ Core Java Basics:
     *mutable object should not return its reference *
 67. AtomicInteger?  
 68. concurrentHashMap,BlockingQueue?  
-69. Producer consumer example with wait() and notifcy(). 
+69. Producer consumer example with wait() and notify().
 70. Reentrant lock?  
 71.
 
