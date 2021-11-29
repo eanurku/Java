@@ -53,8 +53,7 @@
     <module>JavaLoggingByLog4j</module>
             
     <module>DataStructures</module>
-          
-    <module>ds-03-stack</module>
+
       
   </modules>
   
