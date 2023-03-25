@@ -35,7 +35,7 @@ public class ReflectionModifyObjects {
         System.out.println(tobj.getName());
 
 
-        Class<?> classObject = Class.forName("com.Reflection.Teachers");
+        Class<?> classObject = Class.forName("com.anurag.Reflection.Teachers");
 
         //acess method and set value
         Method method = classObject.getDeclaredMethod("setName", String.class);

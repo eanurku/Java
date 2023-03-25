@@ -19,6 +19,7 @@ class parent {
         pobj.fun();
         pobj=innerobj;
         pobj.fun();
+        innerobj.fun();
 
 
 

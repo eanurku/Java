@@ -41,7 +41,7 @@ public class ReflectionCreatingObjects {
         //creating object by Class.newInstance which calls no arg constructor so
         // Teacher class should have no arg constructor
 
-        Class<?> tclassobj = Class.forName("com.Reflection.Teacher");
+        Class<?> tclassobj = Class.forName("com.anurag.Reflection.Teacher");
         Teacher obj1 = (Teacher)tclassobj.newInstance();
         System.out.println(obj1.getName());
 
@@ -49,7 +49,7 @@ public class ReflectionCreatingObjects {
 
         //creating object with argument using Constructor.newInstance method
 
-        Class<?> sclassobj = Class.forName("com.Reflection.Student");
+        Class<?> sclassobj = Class.forName("com.anurag.Reflection.Student");
         Constructor<?> sconsobj = sclassobj.getConstructor(String.class, String.class);
         Student studentObj = (Student) sconsobj.newInstance("gonu", "patna");
 

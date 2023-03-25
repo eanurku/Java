@@ -18,6 +18,16 @@ public class SimpleDateFormatter {
 
         Date newdate = formattter.parse(dateString);
         System.out.println(newdate.toString());
+        System.out.println("-----------------------------------------------------------------");
+
+        SimpleDateFormat formatter2=new SimpleDateFormat("dd-mm-yyyy");
+        String dateString2 = formatter2.format(date);
+        System.out.println(dateString2);
+
+        System.out.println(formatter2.parse(dateString2));
+
+
+
 
     }
 }
