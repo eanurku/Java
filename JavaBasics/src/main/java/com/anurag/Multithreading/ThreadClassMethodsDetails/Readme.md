@@ -11,3 +11,4 @@
 2.Join method
  
 * it block the current thread from where join method is called on another thread.
+* execution will return to current thread once thread which called join is completed.

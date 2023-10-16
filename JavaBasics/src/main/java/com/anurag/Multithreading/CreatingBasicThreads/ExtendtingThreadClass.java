@@ -27,6 +27,6 @@ public class ExtendtingThreadClass {
         thread2.start();
 
 
-        System.out.println(Thread.currentThread()+"main thread ends here");
+        System.out.println(Thread.currentThread()+" main thread ends here");
     }
 }
