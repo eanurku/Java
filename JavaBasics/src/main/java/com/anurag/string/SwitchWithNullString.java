@@ -3,7 +3,7 @@ package com.anurag.string;
 public class SwitchWithNullString {
     public static void main(String[] args) {
         String name=null;
-        //null expression in witch will throw NullPointerException
+        //null expression in switch block will throw NullPointerException
         switch (name){
             case "anu": System.out.println("case 1");break;
             case "anu1": System.out.println("case 2");break;

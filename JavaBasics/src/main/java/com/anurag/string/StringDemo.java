@@ -16,6 +16,7 @@ public class StringDemo {
         System.out.println(System.identityHashCode(s2));
         System.out.println(System.identityHashCode("abc"));
         System.out.println(System.identityHashCode(s3));
+        System.out.println(System.identityHashCode(s1));
 
         String s5=s2.intern();
         System.out.println(System.identityHashCode(s5));
