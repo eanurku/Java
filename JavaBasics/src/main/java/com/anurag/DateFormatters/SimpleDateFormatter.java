@@ -11,6 +11,9 @@ public class SimpleDateFormatter {
         Date date = new Date();
         System.out.println(date);
 
+        SimpleDateFormat formatter1=new SimpleDateFormat("dd/MM/YYYY'T'HH:mm:ss");
+        System.out.println(formatter1.format(date));
+
 
         SimpleDateFormat formattter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
         String dateString = formattter.format(date);

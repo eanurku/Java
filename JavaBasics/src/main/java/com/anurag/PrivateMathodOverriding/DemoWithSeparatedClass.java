@@ -15,7 +15,7 @@ class OuterClass {
 
 }
 
-class SubClass extends OuterClass{
+class SubClass extends OuterClass {
 
     private void fun(){
         System.out.println("inside Subclass  fun()");
@@ -26,9 +26,9 @@ class SubClass extends OuterClass{
         obj1.fun();
 
 
-        OuterClass obj2 = new SubClass();
+        OuterClass obj2 = obj1;
 
-        //compiler error as fun() is not accessible
+        // compiler error as fun() is not accessible
         // obj2.fun();
 
 

@@ -14,7 +14,5 @@ public class InputOutput {
             System.out.println("data=="+name);
         }
 
-
-
     }
 }

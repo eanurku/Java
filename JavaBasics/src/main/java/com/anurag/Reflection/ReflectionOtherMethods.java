@@ -1,6 +1,7 @@
 package com.anurag.Reflection;
 
 
+import java.lang.reflect.Constructor;
 import java.util.Arrays;
 
 class SampleClass {
@@ -42,17 +43,18 @@ public class ReflectionOtherMethods {
 
     public static void main(String[] args) {
 
-        SampleClass obj=new SampleClass("");
+        SampleClass obj=new SampleClass("anurag",123);
 
-        Class<? extends SampleClass> classobj = obj.getClass();
+        Class<? extends SampleClass> classObject = obj.getClass();
 
 
-        Arrays.asList(classobj.getConstructors()).forEach(System.out::println);
+        Arrays.stream(classObject.getConstructors()).forEach(item-> System.out.println(item));
+        Arrays.stream(classObject.getDeclaredMethods()).forEach(item-> System.out.println(item));
+        Arrays.stream(classObject.getDeclaredFields()).forEach(item-> System.out.println(item));
 
-        System.out.println();
-        Arrays.asList(classobj.getDeclaredFields()).forEach(System.out::println);
-        System.out.println();
-        Arrays.asList(classobj.getDeclaredMethods()).forEach(System.out::println);
+
+
+
 
     }
 }
