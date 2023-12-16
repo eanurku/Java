@@ -6,33 +6,76 @@ volatile keyword keeps variable updated across all thread and
 threads will have latest view of variable value
  */
 
-class SampleThread extends Thread {
-    private volatile boolean running = true;
 
-    public void run() {
-        while (running) {
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println("running thread");
-        }
+class SharedObject {
+    private  volatile boolean running=true;
+
+    public boolean isRunning() {
+        return running;
     }
 
-    public void shutdown() {
-        running = false;
+    public void setRunning(boolean running) {
+        this.running = running;
     }
+
+    @Override
+    public String toString() {
+        return "SharedObject{" +
+                "running=" + running +
+                '}';
+    }
+
+}
+ abstract class SampleThread extends Thread {
+
+    abstract public void shutdown();
 }
 
 public class VolatileVariableInThread {
     public static void main(String[] args) throws InterruptedException {
 
-        SampleThread thread1 = new SampleThread();
+        SharedObject sharedObj=new SharedObject();
+
+        SampleThread thread1 = new SampleThread(){
+            @Override
+            public void run() {
+                while(sharedObj.isRunning()){
+                    System.out.println(Thread.currentThread()+" is running...");
+                }
+            }
+
+            @Override
+            public void shutdown() {
+                sharedObj.setRunning(false);
+            }
+        };
+        SampleThread thread2 = new SampleThread(){
+            @Override
+            public void run() {
+                if(sharedObj.isRunning()){
+                    for(int i=1;i>0 && sharedObj.isRunning();i++) {
+                        if(i==2){
+                            this.shutdown();
+                        }
+                        System.out.println(Thread.currentThread() + " is running...");
+                    }
+                }
+            }
+
+            @Override
+            public void shutdown() {
+                sharedObj.setRunning(false);
+            }
+        };
 
         thread1.start();
-        Scanner sc = new Scanner(System.in);
-        sc.nextLine();
-        thread1.shutdown();
+        thread2.start();
+
+
+        thread1.join();
+        thread2.join();
+        System.out.println("main ends here");
+
+
     }
 }

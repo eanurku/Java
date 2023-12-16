@@ -74,7 +74,4 @@ public class SerializationProxyPattern {
         System.out.println(dataToRead);
     }
 
-
-
-
 }

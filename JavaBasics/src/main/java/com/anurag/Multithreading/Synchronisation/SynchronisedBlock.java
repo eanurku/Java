@@ -12,13 +12,13 @@ class CreateListData {
     Object obj2 =new Object();
 
     public void addToList1(Integer num) {
-        synchronized (obj1) {
+        synchronized (this) {
             list1.add(num);
         }
     }
 
     public void addToList2(Integer num) {
-        synchronized (obj2) {
+        synchronized (this) {
             list2.add(num);
         }
     }

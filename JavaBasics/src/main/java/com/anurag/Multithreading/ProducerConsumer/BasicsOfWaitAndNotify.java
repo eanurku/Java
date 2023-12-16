@@ -36,6 +36,7 @@ public class BasicsOfWaitAndNotify {
                 }
             }
         };
+
         Thread cons=new Thread(){
             public void run(){
 

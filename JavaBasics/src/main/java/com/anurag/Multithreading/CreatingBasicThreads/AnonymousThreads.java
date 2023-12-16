@@ -37,7 +37,7 @@ public class AnonymousThreads {
 
         secondThread.start();
 
-        System.out.println(Thread.currentThread()+" main thread ends here");
+        System.out.println(Thread.currentThread() + " main thread ends here");
 
 
     }
