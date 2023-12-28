@@ -6,13 +6,10 @@ import java.time.ZonedDateTime;
 public class ZoneDateTImeClass {
     public static void main(String[] args) {
 
-        ZonedDateTime zonetime= ZonedDateTime.now();
-        System.out.println(zonetime);
+        ZonedDateTime time=ZonedDateTime.now();
+        System.out.println(time);
 
-        ZoneId zoneId= ZoneId.systemDefault();
-        System.out.println(zoneId);
-
-        ZoneId zid= ZoneId.of("Europe/Paris");
-        System.out.println(zid);
+        ZoneId id = ZoneId.of(ZoneId.SHORT_IDS.get("ECT"));
+        System.out.println(id);
     }
 }
