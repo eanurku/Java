@@ -11,7 +11,7 @@ public class Regex_08_TagExtractor {
 
         while(testCases>0){
             String line = in.nextLine();
-            String regex="<(.*)>([^<>]*)</\\1>";
+            String regex="<(.+)>([^<>]+)</(\\1)>";
             Pattern pattern = Pattern.compile(regex);
             Matcher match = pattern.matcher(line);
             if(match.find()){
