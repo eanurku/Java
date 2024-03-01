@@ -3,3 +3,8 @@ mvn archetype:generate -DgroupId="com.anurag" -DartifactId=DataStructures -Darch
 
 2.create .gitignore file with contents:
  target/
+
+3.generate  serialVersionUID for a class
+ * Ctrl+shift+A ,then search for "serializable class without 'serialversionuid'"
+ * enable this feature button
+ * Ctrl+enter on class and option to generate serialVersionUID will be visible.
