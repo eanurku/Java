@@ -1,21 +1,24 @@
 package com.anurag.pizzaflavours;
 
+import com.anurag.decorator.PizzaDecorator;
 import com.anurag.models.Pizza;
 
 
-public class CornPizza  {
-
-    Pizza pizza;
+public class CornPizza extends PizzaDecorator {
 
     public CornPizza(Pizza pizza) {
-        this.pizza = pizza;
+        super(pizza);
     }
 
     public void assemblePizza() {
 
-        this.pizza.assemblePizza();
+        super.assemblePizza();
 
         //decorate pizza with corn
+        this.addCorn();
+    }
+
+    private void addCorn() {
         System.out.println("decorate pizza with corn");
     }
 }

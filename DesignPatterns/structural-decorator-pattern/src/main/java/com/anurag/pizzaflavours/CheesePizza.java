@@ -14,7 +14,11 @@ public class CheesePizza extends PizzaDecorator {
         super.assemblePizza();
 
         //decorate pizza with cheese
+        this.adddCheese();
 
+    }
+
+    private void adddCheese() {
         System.out.println("decorate pizza with cheese");
     }
 }
