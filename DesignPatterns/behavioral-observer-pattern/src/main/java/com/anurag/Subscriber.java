@@ -3,23 +3,14 @@ package com.anurag;
 import com.anurag.models.Observer;
 import com.anurag.models.Subject;
 
-public class Subscriber implements Observer {
+public class Subscriber extends Observer {
 
-    private Subject topic;
+    public Subscriber(Subject subject) {
+        super(subject);
+    }
 
-    @Override
     public void update() {
-        System.out.println("got update from topic : "+getMessage());
+        System.out.println("got update from topic : " + subject.getMessage());
     }
 
-    @Override
-    public void setSubject(Subject topic) {
-
-        this.topic = topic;
-    }
-
-    @Override
-    public String getMessage() {
-        return topic.getMessage();
-    }
 }

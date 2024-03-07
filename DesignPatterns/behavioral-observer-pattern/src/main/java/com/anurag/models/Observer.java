@@ -1,8 +1,12 @@
 package com.anurag.models;
 
-public interface Observer {
+public abstract class Observer {
 
-    void update();
-    public String getMessage();
-    void setSubject(Subject subject);
+    protected Subject subject;
+
+    public Observer(Subject subject) {
+        this.subject = subject;
+    }
+
+    abstract public void update();
 }

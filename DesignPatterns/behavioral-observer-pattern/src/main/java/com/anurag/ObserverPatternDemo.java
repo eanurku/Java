@@ -7,15 +7,9 @@ public class ObserverPatternDemo {
     public static void main(String[] args) {
 
         Subject topic = new Topic();
-
-        Subscriber firstSubscriber = new Subscriber();
-        firstSubscriber.setSubject(topic);
-
-        Subscriber secondSubscriber = new Subscriber();
-        secondSubscriber.setSubject(topic);
-
-        Subscriber thirdSubscriber = new Subscriber();
-        thirdSubscriber.setSubject(topic);
+        Subscriber firstSubscriber = new Subscriber(topic);
+        Subscriber secondSubscriber = new Subscriber(topic);
+        Subscriber thirdSubscriber = new Subscriber(topic);
 
         //register subscribers
         topic.register(firstSubscriber);
@@ -25,7 +19,6 @@ public class ObserverPatternDemo {
 
         //publish message to topic
         topic.publish("first message");
-
 
 
         //unregister a subscriber

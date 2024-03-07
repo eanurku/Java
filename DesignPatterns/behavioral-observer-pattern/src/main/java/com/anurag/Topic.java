@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Topic implements Subject {
 
-    List<Observer> subscribers;
+    private List<Observer> subscribers;
     private String message;
     private boolean changed;
 
@@ -19,30 +19,23 @@ public class Topic implements Subject {
     @Override
     public void register(Observer observer) {
         subscribers.add(observer);
-
-
     }
 
     @Override
     public void unregister(Observer observer) {
-
         subscribers.remove(observer);
     }
 
     @Override
     public void notifySubscribers() {
-
-        subscribers.forEach(subsriber->subsriber.update());
-
-
+        subscribers.forEach(subsriber -> subsriber.update());
     }
 
-    public void publish(String message){
-        this.message=message;
-        this.changed=true;
+    public void publish(String message) {
+        this.message = message;
+        this.changed = true;
         this.notifySubscribers();
-
-        this.changed=false;
+        this.changed = false;
 
     }
 
