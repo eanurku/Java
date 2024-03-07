@@ -17,13 +17,13 @@ public class StrategyDemo {
 
         //credit card payment
         PaymentStrategy paymentMethod = new CreditCardStrategy("card no","secretkey");
-        cart.doPayment(paymentMethod);
+        cart.setPayment(paymentMethod);
+        cart.doPayment();
 
         //paypal payment
         paymentMethod = new PaypalStrategy("email","pass");
-        cart.doPayment(paymentMethod);
-
-
+        cart.setPayment(paymentMethod);
+        cart.doPayment();
 
     }
 }

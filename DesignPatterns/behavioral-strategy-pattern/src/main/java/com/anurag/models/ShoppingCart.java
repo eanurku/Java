@@ -8,6 +8,7 @@ import java.util.List;
 public class ShoppingCart {
 
     List<Item> items;
+    PaymentStrategy paymentMethod;
 
     public ShoppingCart() {
         this.items = new ArrayList<>();
@@ -29,9 +30,13 @@ public class ShoppingCart {
         return totalPrice;
     }
 
-    public void doPayment(PaymentStrategy paymentMethod) {
+    public void doPayment() {
         int amount = calculateTotalPrice();
         paymentMethod.pay(amount);
+    }
+
+    public void setPayment(PaymentStrategy paymentStrategy){
+        this.paymentMethod=paymentStrategy;
     }
 
 }
