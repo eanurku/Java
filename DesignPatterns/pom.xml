@@ -1,131 +1,157 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-          
+            
+  
   
   
   
   <modelVersion>4.0.0</modelVersion>
-          
+            
+  
   
   
   
   <parent>
-                    
+                        
+    
     
     
     
     <groupId>com.anurag</groupId>
-                    
+                        
+    
     
     
     
     <artifactId>Java</artifactId>
-                    
+                        
+    
     
     
     
     <version>1.0-SNAPSHOT</version>
-                  
+                      
+  
   
   
   
   </parent>
-          
+            
+  
   
   
   
   <groupId>com.anurag</groupId>
-          
+            
+  
   
   
   
   <artifactId>DesignPatterns</artifactId>
-          
+            
+  
   
   
   
   <packaging>pom</packaging>
-          
+            
+  
   
   
   
   <version>1.0-SNAPSHOT</version>
-          
+            
+  
   
   
   
   <name>DesignPatterns</name>
-          
+            
+  
   
   
   
   <url>http://maven.apache.org</url>
-          
+            
+  
   
   
   
   <properties>
-                    
+                        
+    
     
     
     
     <maven.compiler.source>1.8</maven.compiler.source>
-                    
+                        
+    
     
     
     
     <maven.compiler.target>1.8</maven.compiler.target>
-                    
+                        
+    
     
     
     
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-                  
+                      
+  
   
   
   
   </properties>
-          
+            
+  
   
   
   
   <dependencies>
-                    
+                        
+    
     
     
     
     <dependency>
-                              
+                                    
+      
       
       
       
       <groupId>junit</groupId>
-                              
+                                    
+      
       
       
       
       <artifactId>junit</artifactId>
-                              
+                                    
+      
       
       
       
       <version>3.8.1</version>
-                              
+                                    
+      
       
       
       
       <scope>test</scope>
-                            
+                                  
+    
     
     
     
     </dependency>
-                  
+                      
+  
   
   
   
   </dependencies>
-                            
+                              
+  
   
   
   
@@ -140,7 +166,8 @@
   
   
   <modules>
-                                                          
+                                                              
+    
     
     
     
@@ -155,67 +182,83 @@
     
     
     <module>creational-factory-pattern</module>
-                    
+                        
+    
     
     
     
     <module>creational-abstract-factory-pattern</module>
-                    
+                        
+    
     
     
     
     <module>creational-singleton-pattern</module>
-                    
+                        
+    
     
     
     
     <module>creational-prototype-pattern</module>
-                    
+                        
+    
     
     
     
     <module>creational-builder-pattern</module>
-                    
+                        
+    
     
     
     
     <module>structural-facade-pattern</module>
-                    
+                        
+    
     
     
     
     <module>structual-proxy-pattern</module>
-                    
+                        
+    
     
     
     
     <module>structural-decorator-pattern</module>
-                    
+                        
+    
     
     
     
     <module>behavioral-observer-pattern</module>
-                      
+                          
+    
     
     
     
     
     <module>behavioral-template-pattern</module>
-                  
+                      
+    
     
     
     
     <module>behavioral-strategy-pattern</module>
-              
+                  
+    
     
     
     <module>structural-adapter-pattern</module>
-          
+              
+    
     
     <module>behavior-state-pattern</module>
+          
+    
+    <module>behavior-iterator-pattern</module>
       
   </modules>
-                          
+                            
+
 
 
 
